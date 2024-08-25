@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="libreria/css/styles.css">
+    <title>Desafio 1 encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="img__header"src="libreria/img/logo.png">
+    </header>
+    <main>
+            <form class="contenedor__1">
+                <textarea  placeholder ="Ingrese el texto aqui" class="contenido__textarea" id="idTexto"></textarea>  
+                <div class="contenedor__mensaje__1">
+                    <img src="libreria/img/icon-circle.png" alt="img circulo !"><strong >Solo letras minúsculas y sin acentos</strong>
+                </div>
+                <div>
+                    <button type="button" id="btnMostrarCampos" class="btn__encriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="button" class="btn__desencriptar"  id="btnMostrarCampos" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </form>
+            <section class="contenedor__2">
+                <div class="contenedor__text__area__1">
+                    <textarea   placeholder ="Ingrese el texto aqui para desencriptar"  id="idMostrarTexto" class="contenedor__mostrar__textarea" hidden></textarea>       
+                    <div class="contenedor__img" id="idOcultarImagen">
+                        <img class="img__muneco" src="libreria/img/img-muneco.png" alt="img muñeco">
+                    </div>     
+                    <div class="contenedor__mensaje__2" id="idOcultarTexto">
+                        <strong class="contenedor__strong">Ningún mensaje fue encontrado</strong>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>                     
+                    </div>
+                    <div class="contenedor__btn__copiar">
+                        <button type="button" id="idMostrarBtnCopiar" class="btn__copiar"  onclick="copiar()" hidden>Copiar</button>
+                    </div>                 
+                </div>                               
+        </section>
+    </main>
+</body>
+<script src="libreria/js/script.js"></script>
+</html>
